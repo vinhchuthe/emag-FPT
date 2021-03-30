@@ -1,0 +1,124 @@
+.hero--home__top h2,
+.hero--survivor__content h2,
+.link,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+body div,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-full {
+    max-width: none;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.row--h-center {
+    justify-content: center;
+}
+
+.col-10 {
+    padding: 0 20px;
+    width: calc(100% * 10 / 12);
+}
+.col-11 {
+    padding: 0 20px;
+    width: calc(100% * 11 / 12);
+}
+
+.col-6 {
+    padding: 0 20px;
+    width: calc(100% * 6 / 12);
+}
+
+.offset-6 {
+    margin-left: calc(100% * 6 / 12);
+}

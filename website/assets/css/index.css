@@ -1,0 +1,209 @@
+@font-face {
+  font-family: MYRIADPRO-REGULAR;
+  src: url("./fonts/MYRIADPRO-REGULAR.OTF");
+}
+
+.adm_emag, .adm_emag .adm--banner, .adm_emag .adm--grid-blog, .adm_emag .adm--grid-blog .container .block {
+  position: relative;
+  width: 100%;
+}
+
+.adm_emag .adm--banner .container .banner-content .banner-img img, .adm_emag .adm--banner .container .banner-content .banner-title img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.adm_emag {
+  overflow: hidden;
+  background-image: url("../images/fpt-bg.png");
+  background-position: top center;
+  background-size: cover;
+  padding-top: 44px;
+}
+
+.adm_emag .container-full {
+  max-width: none;
+  padding: 0;
+}
+
+.adm_emag .row {
+  margin-left: 0;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.adm_emag .row--h-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adm_emag .col-10 {
+  padding: 0 20px;
+  width: calc(100% * 10 / 12);
+}
+
+.adm_emag .col-11 {
+  padding: 0 20px;
+  width: calc(100% * 11 / 12);
+}
+
+.adm_emag .col-6 {
+  padding: 0 20px;
+  width: calc(100% * 6 / 12);
+}
+
+.adm_emag .offset-6 {
+  margin-left: calc(100% * 6 / 12);
+}
+
+.adm_emag .max-1600 {
+  max-width: 1600px;
+}
+
+.adm_emag .adm--banner {
+  margin-bottom: 50px;
+}
+
+.adm_emag .adm--banner .container .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adm_emag .adm--banner .container .banner-content .banner-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.adm_emag .adm--banner .container .banner-content .banner-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.adm_emag .adm--banner .container .banner-content .banner-title .title-text {
+  margin-left: -40px;
+}
+
+.adm_emag .adm--banner .container .banner-content .banner-title .sapo-text {
+  width: 80%;
+}
+
+.adm_emag .adm--grid-blog {
+  padding-top: 260px;
+  margin-bottom: 50px;
+}
+
+.adm_emag .adm--grid-blog::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: rgba(218, 217, 210, 0.5);
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  opacity: 1;
+  -webkit-transition: opacity 1s 0.75s;
+  transition: opacity 1s 0.75s;
+}
+
+.adm_emag .adm--grid-blog .container .section--objects__row > div:nth-child(odd) {
+  margin-top: -205px;
+}
+
+.adm_emag .adm--grid-blog .container .section--objects__content {
+  margin-top: -205px;
+  margin-bottom: 100px;
+}
+
+.adm_emag .adm--grid-blog .container .section--objects__content .intro p {
+  font-family: MYRIADPRO-REGULAR;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.adm_emag .adm--grid-blog .container .block.block--object {
+  display: block;
+  width: 100%;
+  text-align: center;
+  -webkit-perspective: 3000px;
+  perspective: 3000px;
+  margin-bottom: 32px;
+}
+
+.adm_emag .adm--grid-blog .container .block.block--object::after {
+  content: "";
+  display: block;
+  position: relative;
+  padding-bottom: 150%;
+}
+
+.adm_emag .adm--grid-blog .container .block .block--object__inner {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background-color: #232323;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.adm_emag .adm--grid-blog .container .block .block--object__inner::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  opacity: 0.5;
+  z-index: 1;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.adm_emag .adm--grid-blog .container .block .block--object__inner img {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 0;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transition: opacity 0.4s, -webkit-filter 0.4s;
+  -webkit-transition: opacity 0.4s, -webkit-filter 0.4s;
+  transition: filter 0.4s, opacity 0.4s;
+  transition: filter 0.4s, opacity 0.4s, -webkit-filter 0.4s;
+}
+/*# sourceMappingURL=index.css.map */
