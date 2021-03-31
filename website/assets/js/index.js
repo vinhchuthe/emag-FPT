@@ -13,13 +13,6 @@ jQuery(document).ready(function ($) {
         console.log(index);
     });
 
+    // popup
+    $("#popup-detail").niceScroll();
 });
-
-var baiviet = [
-    {
-        index: 1,
-        content: {
-            
-        }
-    }
-]
