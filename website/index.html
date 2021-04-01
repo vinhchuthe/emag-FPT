@@ -7,23 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emag FPT Interactive</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
-    <div class="adm_emag popup-open">
+    <div class="fake-header"></div>
+    <div class="adm_emag" id="main-container">
         <div class="adm--content">
             <div class="adm--banner">
                 <div class="container container-full">
                     <div class="row row--h-center">
                         <div class="col-11">
                             <div class="banner-content">
-                                <div class="banner-img">
+                                <div class="banner-img" data-aos="zoom-in" data-aos-easing="linear">
                                     <img src="./assets/images/fpt-banner.png" alt="">
                                 </div>
                                 <div class="banner-title">
-                                    <img class="title-text" src="./assets/images/fpt-title.png" alt="">
-                                    <img class="sapo-text" src="./assets/images/fpt-sapo.png" alt="">
+                                    <img class="title-text" data-aos="fade-left" data-aos-easing="linear"
+                                        data-aos-delay="300" src="./assets/images/fpt-title.png" alt="">
+                                    <img class="sapo-text" data-aos="fade-up" data-aos-easing="linear"
+                                        data-aos-delay="400" src="./assets/images/fpt-sapo.png" alt="">
                                 </div>
                             </div>
                             <div class="more-btn">
@@ -61,28 +65,28 @@
                             </div>
                             <div class="row section--objects__row">
                                 <div class="col-6 col-mb-12">
-                                    <div class="block block--object" data-id="block-obj-1" data-tilt>
+                                    <div class="block block--object" data-id="block-obj-1">
                                         <div class="block--object__inner">
                                             <img class="block--object-img" src="./assets/images/fpt-blog1.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-mb-12">
-                                    <div class="block block--object" data-id="block-obj-2" data-tilt>
+                                    <div class="block block--object" data-id="block-obj-2">
                                         <div class="block--object__inner">
                                             <img class="block--object-img" src="./assets/images/fpt-blog2.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-mb-12">
-                                    <div class="block block--object" data-id="block-obj-3" data-tilt>
+                                    <div class="block block--object" data-id="block-obj-3">
                                         <div class="block--object__inner">
                                             <img class="block--object-img" src="./assets/images/fpt-blog3.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-mb-12">
-                                    <div class="block block--object" data-id="block-obj-4" data-tilt>
+                                    <div class="block block--object" data-id="block-obj-4">
                                         <div class="block--object__inner">
                                             <img class="block--object-img" src="./assets/images/fpt-blog4.png" alt="">
                                         </div>
@@ -129,6 +133,9 @@
         </div>
 
         <div class="adm--popup" id="popup-detail">
+
+            <button type="button" id="ss-btn-back" onclick="" class="ss-btn-arrow">←</button>
+
             <div id="block-obj-1" class="adm-popup--block popup1 hidden">
                 <div class="popup-block--top">
                     <div class="w980">
@@ -207,9 +214,9 @@
                 </div>
                 <div class="popup-block--bot">
                     <div class="w980 popup-nav-wrapper">
-                        <div class="popup-nav popup-nav-left">
+                        <div class="popup-nav popup-nav-left" data-nav="block-obj-4">
                             <div class="popup-nav-thumb">
-                                <img src="./assets/images/popup1-prev.png" alt="">
+                                <img src="./assets/images/popup4-next.png" alt="">
                             </div>
                             <p class="popup-nav-text">
                                 <span class="popup-nav-icon icon-prev"><img src="./assets/images/popup-nav-arrow.png"
@@ -217,7 +224,7 @@
                                 <span> Bài trước</span>
                             </p>
                         </div>
-                        <div class="popup-nav popup-nav-right">
+                        <div class="popup-nav popup-nav-right" data-nav="block-obj-2">
                             <div class="popup-nav-thumb">
                                 <img src="./assets/images/popup1-next.png" alt="">
                             </div>
@@ -325,7 +332,7 @@
                 </div>
                 <div class="popup-block--bot">
                     <div class="w980 popup-nav-wrapper">
-                        <div class="popup-nav popup-nav-left">
+                        <div class="popup-nav popup-nav-left" data-nav="block-obj-1">
                             <div class="popup-nav-thumb">
                                 <img src="./assets/images/popup2-prev.png" alt="">
                             </div>
@@ -335,7 +342,7 @@
                                 <span> Bài trước</span>
                             </p>
                         </div>
-                        <div class="popup-nav popup-nav-right">
+                        <div class="popup-nav popup-nav-right" data-nav="block-obj-3">
                             <div class="popup-nav-thumb">
                                 <img src="./assets/images/popup2-next.png" alt="">
                             </div>
@@ -417,7 +424,7 @@
                 </div>
                 <div class="popup-block--bot">
                     <div class="w980 popup-nav-wrapper">
-                        <div class="popup-nav popup-nav-left">
+                        <div class="popup-nav popup-nav-left" data-nav="block-obj-2">
                             <div class="popup-nav-thumb">
                                 <img src="./assets/images/popup3-prev.png" alt="">
                             </div>
@@ -427,7 +434,7 @@
                                 <span> Bài trước</span>
                             </p>
                         </div>
-                        <div class="popup-nav popup-nav-right">
+                        <div class="popup-nav popup-nav-right" data-nav="block-obj-4">
                             <div class="popup-nav-thumb">
                                 <img src="./assets/images/popup3-next.png" alt="">
                             </div>
@@ -440,88 +447,49 @@
                     </div>
                 </div>
             </div>
-            <!-- incomplete -->
-            <div id="block-obj-4" class="adm-popup--block popup4 hidden popup-active">
+            <div id="block-obj-4" class="adm-popup--block popup4 hidden">
                 <div class="popup-block--top">
                     <div class="w980">
                         <div class="popup-container">
                             <div class="popup-banner">
                                 <div class="popup-banner-title">
-                                    <img src="./assets/images/popup1-title.png" alt="">
-                                </div>
-                                <div class="popup-banner-img">
-                                    <img src="./assets/images/popup1-img.png" alt="">
+                                    <img src="./assets/images/popup4-title.png" alt="">
                                 </div>
                             </div>
                             <div class="popup-content">
                                 <p>
-                                    “Rồi 2020 đến, chẳng gõ cửa xông đất nhà người ta như lẽ thường mà ào ào vô rồi để
-                                    lại bao nhiêu là biến động. Giữa năm, tôi không thể về nhà vì đại dịch.
+                                    Dù có đi bao xa, những bữa cơm nhà với hương vị nêm nếm riêng của từng gia đình, với
+                                    tiếng nói, tiếng cười, những câu chuyện rộn rã hàng ngày vẫn luôn in đậm trong ký ức
+                                    mỗi người. Càng đi xa, càng trải đời nhiều, con người ta mới càng thấm thía những
+                                    bữa cơm ngày thường, tưởng như bình thường nhưng hóa ra lại là cả một phần cuộc
+                                    sống, cả một trời ký ức, cả một nguồn sức mạnh tinh thần, xoa dịu ta những lúc yếu
+                                    lòng “nghe tiếng cơm sôi cũng nhớ nhà”. Khi những quãng đường ngày càng ngắn lại bởi
+                                    những giờ bay ngày một cải thiện. Khi chỉ mất vài giây cho một lần kết nối, từ bất
+                                    cứ vị trí nào, đâu đâu trên quả địa cầu hình cầu này lập tức “phẳng” lại, hiển hiện
+                                    ngay trước mắt ta. Thay vì cả năm, đôi khi là những chuyến xa nhà vài năm trời mới
+                                    được gặp lại, thì, thật lòng phải cảm ơn mạng internet và công nghệ số, xóa hết
+                                    những xa xôi. Những bữa cơm cùng nhau dù mỗi người ở cách nhau cả nửa vòng trái đất.
+                                    Những cuộc họp gia đình, những vui, buồn, những cột mốc quan trọng, nhờ có chiếc màn
+                                    hình, mà gần lại như chưa từng xa. Chúng tôi, những người con xa nhà thường nói vui
+                                    với nhau, khoảng cách bao xa không quan trọng, quan trọng là đường truyền ở nhà có
+                                    đủ mạnh hay không. Chỉ cần mạng chạy ro ro, thì dù có ở đâu, chúng tôi cũng sẵn sàng
+                                    nhập cuộc, sẵn sàng cháy hết mình cùng với gia đình, bạn bè ở nhà. Giờ, cụng ly qua
+                                    màn hình, thổi nến qua màn hình lại là trào lưu viral cả thế giới. Khoảng cách chẳng
+                                    còn là trở ngại, khi mà, nếu có lòng thì sự quan tâm vẫn luôn ở bên ta.
                                 </p>
-                                <p>
-                                    Rồi cũng như bao người, trong những tháng ngày cách ly, ta tự nhiên nhớ nhung tột
-                                    cùng những điều trước giờ ta coi là đương nhiên.
-                                </p>
-                                <p>
-                                    Thèm khát một chuyến bay trở về, chiều chiều ngồi chồm hổm nhổ tóc sâu cho mẹ, sáng
-                                    sáng đạp xe ra biển cùng ba, hay đơn giản là được ăn bữa cơm nhà...
-                                </p>
-                                <p>
-                                    Cứ thế, mọi kết nối đều diễn ra qua "video call" cho đến tháng 10. Tôi về nhà không
-                                    báo trước. Dắt theo hai đứa bạn vì lỡ khoe "Mẹ tao pha cafe ngon lắm".
-                                </p>
-                                <p>
-                                    Vừa thấy bóng dáng tôi trước cửa mẹ chậm chậm bước ra, đôi chút ngỡ ngàng, cứ đứng
-                                    tần ngần một lúc rồi mới kéo tôi cùng hai đứa bạn vào nhà. Rất nhanh thôi, tôi thấy
-                                    những hạt mưa bóng mây hắt ra từ đôi mắt mẹ, tự nhiên lồng ngực mình nóng ran. Đó là
-                                    lần đầu tiên tôi thấy, cảm xúc của một người có thể dẫn dắt cảm xúc người khác như
-                                    thế nào.
-                                </p>
-                                <p>
-                                    Tối hôm đó, ba mẹ rủ thêm vài dì qua chơi làm một bữa cơm nhỏ mừng tôi về. Đó là mẹ
-                                    tôi nói, còn bản thân tôi thấy bữa cơm đó to lắm với cả chục món mà tôi biết có đi
-                                    qua mấy bận đèn đỏ Sài Gòn cũng chẳng thể tìm thấy.
-                                </p>
-                                <p>
-                                    Trời lạnh lạnh tôi cùng vài đứa bạn lụi cụi bên cái bếp củi nhỏ thổi lửa nướng cá,
-                                    bên kia mẹ cùng mấy dì nhặt rau. Ba và thằng em trai thì khệ nệ khiêng bàn ra trước
-                                    hiên, xếp dăm cái ghế ngay ngắn quanh chiếc bàn con con.
-                                </p>
-                                <p>
-                                    Nhỏ bạn bảo tôi cá nướng Đà Nẵng làm nó nhớ vịt quay Lạng Sơn, tôi cười khẩy tỏ ý
-                                    hai món chẳng liên quan gì nhau. Nhưng cả tôi với nó đều ngầm hiểu mấy món mẹ tôi
-                                    nấu làm nó nhớ lắm mâm cơm quê nhà.
-                                </p>
-                                <p class="break"></p>
-                                <p>
-                                    Đâu đó có những tiếng thở dài nhưng cũng có những tiếng cười. Mẹ cùng mấy dì hỏi
-                                    chuyện công việc ở Sài Gòn, hỏi tụi tôi sống sao trong những ngày cả nước cách ly,
-                                    rồi còn dặn món nào ngon sẽ nấu thêm cho mai mốt mấy đứa đem vô Sài Gòn. Ba tôi vốn
-                                    ít nói, chỉ ngồi nghe mọi người tỉ tê, chốc chốc nhắm chút rượu, gắp thức ăn cho mấy
-                                    đứa tôi...
-                                    Giờ tàn của màn đêm, bếp củi vẫn còn chút lửa già bắn từng tia lách tách. Sương phủ
-                                    đầy lên tóc, lên vai chúng tôi, đâu đó trong bàn ăn lại có tiếng xuýt xoa vì lạnh.
-                                    Món ăn đã vơi, những câu chuyện vẫn được bẻ đôi, người này nhâm nhi, người kia hát
-                                    đôi ba câu lưng chừng.
-                                </p>
-                                <p>
-                                    Ở giữa những khoảng trống là sương lạnh nhưng cũng ở giữa đó hơi ấm từ sự sum vầy
-                                    lan toả. Đêm hôm ấy, khoảng sân nhà tôi vắng lặng im.
-                                    Đôi khi ta gọi mâm cơm là mâm Tết, không phải vì nó được tổ chức vào 29, 30 hay mùng
-                                    một mà bởi vì khi ngồi vào đó ta nếm được vị của yêu thương. Và mâm cơm đặc biệt
-                                    giữa cái ngày Đà Nẵng lạnh xé da, hương hoa sử quân tử len lỏi vào từng câu chuyện,
-                                    đó chính là mâm Tết tháng 10 của tôi…”
-                                </p>
-                                <p class="author">Quỳnh Anh – 27 tuổi, chuyên viên marketing</p>
+
+                                <div class="popup-content-img">
+                                    <img src="./assets/images/popup4-img.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="popup-block--bot">
                     <div class="w980 popup-nav-wrapper">
-                        <div class="popup-nav popup-nav-left">
+                        <div class="popup-nav popup-nav-left" data-nav="block-obj-3">
                             <div class="popup-nav-thumb">
-                                <img src="./assets/images/popup1-prev.png" alt="">
+                                <img src="./assets/images/popup4-prev.png" alt="">
                             </div>
                             <p class="popup-nav-text">
                                 <span class="popup-nav-icon icon-prev"><img src="./assets/images/popup-nav-arrow.png"
@@ -529,9 +497,9 @@
                                 <span> Bài trước</span>
                             </p>
                         </div>
-                        <div class="popup-nav popup-nav-right">
+                        <div class="popup-nav popup-nav-right" data-nav="block-obj-1">
                             <div class="popup-nav-thumb">
-                                <img src="./assets/images/popup1-next.png" alt="">
+                                <img src="./assets/images/popup1-prev.png" alt="">
                             </div>
                             <p class="popup-nav-text">
                                 <span>Bài Sau</span>
@@ -546,6 +514,8 @@
     </div>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.nicescroll.js"></script>
+    <script src="./assets/js/Tweenmax.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/tilt.jquery.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
