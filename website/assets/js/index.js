@@ -8,8 +8,8 @@ jQuery(document).ready(function ($) {
 
     // nicescroll
     $("#main-container").niceScroll({
-        scrollspeed: 100,
-        mousescrollstep: 25,
+        scrollspeed: 120,
+        mousescrollstep: 20,
     });
     $("#popup-detail").niceScroll();
 
