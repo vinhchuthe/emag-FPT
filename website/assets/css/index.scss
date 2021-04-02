@@ -194,7 +194,6 @@ $cam: #f48118;
                             cursor: url("../images/hover-icon.png"), auto;
 
                             .block--object__inner {
-                                filter: blur(0);
                                 transition: all 0.5s;
 
                                 &::before {
@@ -216,7 +215,6 @@ $cam: #f48118;
                         transform-style: preserve-3d;
                         overflow: hidden;
                         border-radius: 10px;
-                        filter: blur(4px);
                         transition: all 0.5s;
 
                         &::before {
@@ -384,6 +382,7 @@ $cam: #f48118;
 
                         .popup-nav-thumb {
                             margin-bottom: 30px;
+                            transition: all 0.5s;
 
                             img {
                                 @extend %img;
@@ -417,12 +416,19 @@ $cam: #f48118;
                                 }
                             }
                         }
+
+                        &:hover {
+                            .popup-nav-thumb {
+                                transform: scale(1.05);
+                                transition: all 0.5s;
+                            }
+                        }
                     }
                 }
             }
 
             &.popup-active {
-                display: block;
+                display: block !important;
             }
         }
 

@@ -229,8 +229,6 @@
 }
 
 .adm_emag .adm--content .adm--grid-blog .container .block.block--object:hover .block--object__inner {
-  -webkit-filter: blur(0);
-          filter: blur(0);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -253,8 +251,6 @@
   transform-style: preserve-3d;
   overflow: hidden;
   border-radius: 10px;
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -440,6 +436,8 @@
 
 .adm_emag .adm--popup .adm-popup--block .popup-block--bot .popup-nav-wrapper .popup-nav .popup-nav-thumb {
   margin-bottom: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .adm_emag .adm--popup .adm-popup--block .popup-block--bot .popup-nav-wrapper .popup-nav .popup-nav-text {
@@ -474,8 +472,15 @@
           transform: rotate(180deg);
 }
 
+.adm_emag .adm--popup .adm-popup--block .popup-block--bot .popup-nav-wrapper .popup-nav:hover .popup-nav-thumb {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .adm_emag .adm--popup .adm-popup--block.popup-active {
-  display: block;
+  display: block !important;
 }
 
 .adm_emag .adm--popup .ss-btn-arrow {
