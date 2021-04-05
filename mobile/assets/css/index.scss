@@ -1,0 +1,278 @@
+@import "./fonts/font";
+
+%img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+$cam: #f16f1d;
+$white: #ffffff;
+$black: #000000;
+
+.adm_emag {
+    position: relative;
+    overflow: hidden;
+    font-family: Helvetica-Neue;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: $cam;
+    transition: all 0.3s;
+    padding-top: 44px;
+
+    // banner
+    .adm-banner {
+        position: relative;
+        padding: 20px 15px;
+        background-color: $cam;
+        height: calc(100vh - 44px);
+        overflow: auto;
+
+        .adm-banner-img {
+            margin-bottom: 30px;
+            img {
+                @extend %img;
+            }
+        }
+        .adm-banner-content {
+            padding: 0 15px;
+            p {
+                font-family: Helvetica-Neue;
+                font-weight: 500;
+                font-style: normal;
+                color: $white;
+                font-size: 18px;
+                text-align: justify;
+                line-height: 1.35;
+            }
+            .btn-readmore {
+                margin: 40px 0;
+                a {
+                    display: inline-flex;
+                    height: 45px;
+                    align-items: center;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 13px;
+                    background: #f4b23e;
+                    padding: 0 20px;
+                    color: #000000;
+                    border-radius: 30px;
+
+                    img {
+                        height: 16px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // blog-list
+    .adm-blog-list {
+        position: fixed;
+        top: 44px;
+        left: 100vw;
+        width: 100vw;
+        transform-origin: right;
+        height: calc(100vh - 44px);
+        background-color: $cam;
+        transition: all 0.5s !important;
+        overflow: auto;
+        padding: 25px 15px;
+
+        .adm-blog-list-item {
+            position: relative;
+            margin-bottom: 15px;
+
+            a {
+                display: block;
+
+                img {
+                    @extend %img;
+                }
+            }
+
+            .credit {
+                display: flex;
+                margin: 50px 0 30px;
+                align-items: flex-end;
+
+                .credit-img {
+                    flex: 0 0 auto;
+                    img {
+                        max-height: 250px;
+                        height: 100%;
+                        width: auto;
+                        display: block;
+                    }
+                }
+                .credit-text {
+                    flex: 0 0 65%;
+                    margin-left: 15px;
+
+                    .credit-title {
+                        margin-bottom: 30px;
+                    }
+                    .credit-name {
+                        p {
+                            margin-bottom: 10px;
+                            font-family: Helvetica-Neue;
+                            font-weight: 300;
+                            font-style: normal;
+                            color: $black;
+                            position: relative;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            pointer-events: none;
+
+                            span {
+                                display: inline-block;
+
+                                &.sep {
+                                    flex: 1;
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: $black;
+                                    margin: 0px 5px;
+                                }
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            transition: all 1s !important;
+            animation: scale 1s infinite;
+            z-index: 3;
+            opacity: 0;
+            pointer-events: none;
+
+            a {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 100%;
+                background: #f4b23e;
+                transform: rotate(180deg);
+
+                img {
+                    @extend %img;
+                }
+            }
+        }
+
+        &.active {
+            left: 0;
+            transition: all 0.5s !important;
+
+            .btn-back-home {
+                opacity: 1;
+                pointer-events: unset;
+                transition: all 1s !important;
+            }
+        }
+    }
+
+    // blog-item
+    .adm-blog-item {
+        .modal {
+            border: 10px solid $cam;
+            margin-top: 44px;
+
+            .close {
+                position: fixed;
+                text-shadow: none;
+                opacity: 1;
+                display: flex;
+                width: 35px;
+                height: 35px;
+                background: #f16f1d;
+                color: #fff;
+                top: 54px;
+                right: 10px;
+                justify-content: center;
+                align-items: center;
+                line-height: unset;
+                padding-bottom: 6px;
+                border: 1px solid #fff;
+                z-index: 10;
+            }
+            .modal-dialog {
+                margin: 0;
+                .modal-content {
+                    border-radius: 0;
+                    border: none;
+
+                    .modal-body {
+                        padding: 50px 15px;
+
+                        .popup-content {
+                            .popup-content-header {
+                                margin-bottom: 40px;
+                                h3 {
+                                    font-family: ICIELBCDDCHARDWARE;
+                                    color: #eb4714;
+                                    font-size: 35px;
+                                    line-height: 1.3;
+                                    margin-bottom: 25px;
+                                }
+                                img {
+                                    @extend %img;
+                                }
+                            }
+                            .popup-content-text {
+                                p {
+                                    font-family: Helvetica-Neue;
+                                    font-weight: normal;
+                                    font-style: normal;
+                                    color: $black;
+                                    font-size: 16px;
+                                    margin-bottom: 0;
+                                    text-align: justify;
+
+                                    &.breaker {
+                                        margin-bottom: 20px;
+                                    }
+                                    &.author {
+                                        margin-top: 40px;
+                                        font-weight: 300;
+                                        font-style: italic;
+                                    }
+                                }
+                                .popup-content-img {
+                                    margin-top: 40px;
+                                    img {
+                                        @extend %img;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.9);
+    }
+    85% {
+        transform: scale(1.1);
+    }
+}
