@@ -219,7 +219,7 @@
   content: "";
   display: block;
   position: relative;
-  padding-bottom: 150%;
+  padding-bottom: 135%;
 }
 
 .adm_emag .adm--content .adm--grid-blog .container .block.block--object:hover {
@@ -250,7 +250,7 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
