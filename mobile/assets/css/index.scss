@@ -84,19 +84,28 @@ $black: #000000;
 
         .adm-blog-list-item {
             position: relative;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+
+            img {
+                @extend %img;
+                margin-bottom: 10px;
+            }
 
             a {
-                display: block;
-
-                img {
-                    @extend %img;
-                }
+                display: inline-block;
+                padding: 7px 15px;
+                border: 1px solid #f4b23e;
+                border-radius: 20px;
+                font-size: 14px;
+                color: $black;
+                background-color: #f4b23e;
+                text-decoration: none;
             }
 
             .credit {
                 display: flex;
-                margin: 50px 0 30px;
+                margin: 70px 0 40px;
                 align-items: flex-end;
 
                 .credit-img {
@@ -109,11 +118,12 @@ $black: #000000;
                     }
                 }
                 .credit-text {
-                    flex: 0 0 65%;
+                    flex: 0 0 75%;
                     margin-left: 15px;
 
                     .credit-title {
                         margin-bottom: 30px;
+                        max-width: 130px;
                     }
                     .credit-name {
                         p {

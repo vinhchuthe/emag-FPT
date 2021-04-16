@@ -35,7 +35,7 @@
   src: url("./fonts/ICIELBCDDCHARDWARE-CONDENSED.TTF");
 }
 
-.adm_emag .adm-banner .adm-banner-img img, .adm_emag .adm-blog-list .adm-blog-list-item a img, .adm_emag .adm-blog-list .btn-back-home a img, .adm_emag .adm-blog-item .modal .modal-dialog .modal-content .modal-body .popup-content .popup-content-header img, .adm_emag .adm-blog-item .modal .modal-dialog .modal-content .modal-body .popup-content .popup-content-text .popup-content-img img {
+.adm_emag .adm-banner .adm-banner-img img, .adm_emag .adm-blog-list .adm-blog-list-item img, .adm_emag .adm-blog-list .btn-back-home a img, .adm_emag .adm-blog-item .modal .modal-dialog .modal-content .modal-body .popup-content .popup-content-header img, .adm_emag .adm-blog-item .modal .modal-dialog .modal-content .modal-body .popup-content .popup-content-text .popup-content-img img {
   width: 100%;
   height: auto;
   display: block;
@@ -123,18 +123,30 @@
 
 .adm_emag .adm-blog-list .adm-blog-list-item {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.adm_emag .adm-blog-list .adm-blog-list-item img {
+  margin-bottom: 10px;
 }
 
 .adm_emag .adm-blog-list .adm-blog-list-item a {
-  display: block;
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid #f4b23e;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f4b23e;
+  text-decoration: none;
 }
 
 .adm_emag .adm-blog-list .adm-blog-list-item .credit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0 30px;
+  margin: 70px 0 40px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -155,13 +167,14 @@
 
 .adm_emag .adm-blog-list .adm-blog-list-item .credit .credit-text {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 65%;
-          flex: 0 0 65%;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
   margin-left: 15px;
 }
 
 .adm_emag .adm-blog-list .adm-blog-list-item .credit .credit-text .credit-title {
   margin-bottom: 30px;
+  max-width: 130px;
 }
 
 .adm_emag .adm-blog-list .adm-blog-list-item .credit .credit-text .credit-name p {
